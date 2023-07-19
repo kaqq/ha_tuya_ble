@@ -162,6 +162,21 @@ mapping: dict[str, TuyaBLECategoryNumberMapping] = {
             ]
         }
     ),
+    "cl": TuyaBLECategoryNumberMapping(
+        products={
+            "kcy0x4pi": [  # Curtain Robot
+                TuyaBLENumberMapping(
+                    dp_id=3,
+                    description=NumberEntityDescription(
+                        key="percent_state",
+                        native_max_value=100,
+                        native_min_value=0,
+                        native_unit_of_measurement=PERCENTAGE
+                    ),
+                ),
+            ]
+        }
+    ),
     "szjqr": TuyaBLECategoryNumberMapping(
         products={
             **dict.fromkeys(

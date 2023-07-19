@@ -187,6 +187,13 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
             ),
         },
     ),
+    "cl": TuyaBLECategoryInfo(
+        products={
+            "kcy0x4pi": TuyaBLEProductInfo(  # device product_id
+                name="Curtain Robot",
+            ),
+        },
+    ),
     "szjqr": TuyaBLECategoryInfo(
         products={
             "3yqdo5yt": TuyaBLEProductInfo(  # device product_id
